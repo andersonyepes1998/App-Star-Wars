@@ -3,7 +3,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { lightTheme, darkTheme } from '../theme/Themes';
 import { Platform } from 'react-native';
 
-// Definir la estructura del contexto
 interface ThemeContextType {
   isLightTheme: boolean;
   theme: typeof lightTheme | typeof darkTheme;
@@ -11,7 +10,6 @@ interface ThemeContextType {
   platform: 'ios' | 'android' | 'web' | 'windows' | 'macos' | 'unknown';
 }
 
-// Crear el contexto con un valor inicial vacío
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 // Hook personalizado para usar el contexto
@@ -23,7 +21,6 @@ export const useTheme = (): ThemeContextType => {
   return context;
 };
 
-// Definir las props del proveedor
 interface ThemeProviderProps {
   children: ReactNode;
 }
