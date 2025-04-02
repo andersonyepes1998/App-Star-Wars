@@ -1,4 +1,7 @@
-# 📱 React Native Application
+# 📱 React
+# 📱 React ![img-2](https://github.com/user-attachments/assets/e2244bbb-b2bc-4b3f-8798-e9ca3ce6fbbd)
+# 📱 React ![img-1](https://github.com/user-attachments/assets/1d95a528-7df4-452c-9ac6-1659de2fada0)
+Native Application
 
 ## 🚀 Inicialización del Proyecto
 
