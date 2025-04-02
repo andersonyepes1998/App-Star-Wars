@@ -72,22 +72,17 @@ export default App;
 ---
 
 ## 📦 Generar el APK de la Aplicación
-Para generar un APK de la aplicación en modo `debug`, sigue estos pasos:
+Para generar un APK de la aplicación, sigue estos pasos:
 
 ### 📌 Paso 1: Crear la Carpeta de Assets
 Ejecuta el siguiente comando en la terminal:
 ```sh
-mkdir -p android/app/src/main/assets
+./gradlew clean
 ```
 
 ### 📌 Paso 2: Generar el Bundle de JavaScript
 ```sh
-npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
-```
-
-### 📌 Paso 3: Compilar el APK
-```sh
-cd android && ./gradlew assembleDebug
+./gradlew assembleRelease
 ```
 
 Después de completar estos pasos, el APK generado estará disponible en:
